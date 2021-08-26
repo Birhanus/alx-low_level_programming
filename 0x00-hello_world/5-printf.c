@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(void)
 {
-  printf("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\n");
+  printf("with proper grammar, but the outcome is a piece of art,\n");
   return (0);
 }
