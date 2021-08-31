@@ -1,4 +1,4 @@
-void _putchar(cahr 'a')
+void _putchar(char a)
 {
 	putchar(a);
 }
