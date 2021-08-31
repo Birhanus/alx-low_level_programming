@@ -37,4 +37,10 @@ int _isalpha(int c);
  */
 int print_sign(int n);
 
+/**
+ *int_abs-compute absoulute value of integer
+ *Return: integer
+ *
+ */
+int _abs(int);
 #endif
