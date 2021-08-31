@@ -29,4 +29,12 @@ int _islower(int c);
  *@c:character to check
  */
 int _isalpha(int c);
+
+/**
+ *print_sign-print the sign of the number
+ *@n:n is the number
+ *Return:integer
+ */
+int print_sign(int n);
+
 #endif
