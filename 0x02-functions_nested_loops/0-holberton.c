@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 /*
  *always return zero
  *
@@ -8,18 +8,16 @@ int main(void)
 	/*
 	 *print holberton
 	 */
-
-	char h = 'H', o = 'o', l = 'l', b = 'b', e = 'e', r = 'r', t = 't', n = 'n';
-	putchar(h);
-	putchar(o);
-	putchar(l);
-	putchar(b);
-	putchar(e);
-	putchar(r);
-	putchar(t);
-	putchar(o);
-	putchar(n);
-	putchar('\n');
+	_putchar('H');
+	_putchar('o');
+	_putchar('l');
+	_putchar('b');
+	_putchar('e');
+	_putchar('r');
+	_putchar('t');
+	_putchar('o');
+	_putchar('n');
+	_putchar('\n');
 	return (0);
 
 }
