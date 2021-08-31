@@ -4,4 +4,5 @@
  *_putchar writes the character a to stdout
  *@c: the character to print
  */
-int _putcahr(char a);
+int _putchar(char a);
+#endif
