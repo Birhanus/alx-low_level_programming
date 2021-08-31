@@ -18,6 +18,10 @@ void print_alphabet(void);
  */
 void print_alphabet_x10(void);
 
-
+/**
+ *_lower-check if is lowrcase
+ *@c:The character to check
+ */
+int _islower(int c);
 
 #endif
