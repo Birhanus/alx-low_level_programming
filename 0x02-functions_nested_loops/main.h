@@ -5,9 +5,19 @@
  *@c: the character to print
  */
 int _putchar(char a);
-#endif
+
 /**
  * print_alphabet - print lowercase alphabet
  */
 
 void print_alphabet(void);
+
+/**
+ *10 times the alphabet,in lowercase,follwed by anew line
+ *no return
+ */
+void print_alphabet_x10(void);
+
+
+
+#endif
