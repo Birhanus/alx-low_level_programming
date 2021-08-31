@@ -28,5 +28,5 @@ int _islower(int c);
  *_isalpha-cecks for alphabetic character
  *@c:character to check
  */
-int _isalphaa(int c);
+int _isalpha(int c);
 #endif
