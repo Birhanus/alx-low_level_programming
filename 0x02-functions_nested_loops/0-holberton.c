@@ -1,14 +1,11 @@
 #include "main.h"
-/*
+/**
  *main-print _putchar, followed by new line
  *Return: 0
  *
  */
 int main(void)
 {
-	/*
-	 *print holberton
-	 */
 	_putchar('_');
 	_putchar('p');
 	_putchar('u');
