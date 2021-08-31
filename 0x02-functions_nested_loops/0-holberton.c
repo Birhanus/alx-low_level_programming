@@ -5,6 +5,10 @@
  */
 int main(void)
 {
+	/*
+	 *print holberton
+	 */
+
 	char h = 'H', o = 'o', l = 'l', b = 'b', e = 'e', r = 'r', t = 't', n = 'n';
 	putchar(h);
 	putchar(o);
@@ -13,7 +17,9 @@ int main(void)
 	putchar(e);
 	putchar(r);
 	putchar(t);
+	putchar(o);
 	putchar(n);
+	putchar('\n');
 	return (0);
 
 }
