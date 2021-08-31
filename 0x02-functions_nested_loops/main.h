@@ -24,4 +24,9 @@ void print_alphabet_x10(void);
  */
 int _islower(int c);
 
+/**
+ *_isalpha-cecks for alphabetic character
+ *@c:character to check
+ */
+int _isalphaa(int c);
 #endif
