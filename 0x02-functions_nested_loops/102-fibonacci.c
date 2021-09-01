@@ -15,7 +15,7 @@ int main(void)
 	for (counter = 1; counter <= (countto / 2); counter++)
 	{
 		printf("%li%s%li", a, ", ", b);
-		if(b!=20365011074)
+		if(b != 20365011074)
 			printf(", ");
 		a += b;
 		b += a;
