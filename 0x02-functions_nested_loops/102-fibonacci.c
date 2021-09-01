@@ -14,7 +14,7 @@ int main(void)
 
 	for (counter = 1; counter <= (countto / 2); counter++)
 	{
-		printf("%li %2s %li %2s ", a,", ", b,", ");
+		printf("%li%s%li%s", a, ", ", b, ", ");
 		a += b;
 		b += a;
 	}
