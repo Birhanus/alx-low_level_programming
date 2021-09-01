@@ -1,16 +1,13 @@
 #include "main.h"
-#include <stdib.h>
-#include <time.h>
-#include <stdio.h>
 /**
- *main-function to check number postive or negative
+ *main - tests function prints if integer positive or negative
  *Return:0
  */
 int main(void)
 {
-	int n;
+	int i;
 
-	n = 0;
-	positive_or_negative(n);
+	i = 0;
+	positive_or_negative(i);
 	return (0);
 }

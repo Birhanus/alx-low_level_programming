@@ -4,5 +4,5 @@
  *positive_or_negative-function to check number postive or negative
  *
  */
-int positive_or_negative(int);
+int positive_or_negative(int i);
 #endif
