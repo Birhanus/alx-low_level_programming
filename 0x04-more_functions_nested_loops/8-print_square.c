@@ -1,20 +1,25 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- *print_square- function that prints a square
- *@size:size of the square
+ * print_square - print a square of #'s given size
+ * @size: size to draw
  */
+
 void print_square(int size)
 {
-	int i;
-	int j;
+	int row, column;
 
 	if (size > 0)
 	{
-		for (i = 1; i <= size; i++)
+		for (row = 1; row <= size; row++)
 		{
-			for (j = 1; j <= size; j++)
-			_putchar('#');
-		_putchar('\n');
+			for (column = 1; column <= size; column++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
 	}
+	else
+		_putchar('\n');
 }
