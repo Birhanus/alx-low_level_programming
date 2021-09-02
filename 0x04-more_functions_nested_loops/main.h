@@ -1,5 +1,5 @@
-#ifndef _MAIN_H
-#define _MAIN_H
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
 /**
  *_isupper-function to check uppercase
@@ -15,7 +15,8 @@ int _isupper(int);
  *_putchar writes the character a to stdout
  *@c: the character to print
  */
-int _putchar(char a);
+
+int _putchar(char c);
 int _isdigit(int c);
 int mul(int a, int b);
 void print_numbers(void);
