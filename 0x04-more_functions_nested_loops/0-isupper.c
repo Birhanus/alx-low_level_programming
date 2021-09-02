@@ -5,7 +5,7 @@
  *@c: Character to check
  *Return:1 if upper case, 0 if not
  */
-int _isupper(char c)
+void _isupper(char c)
 {
 	if (c >= '65' && c <= '90')
 		_putchar('1');
