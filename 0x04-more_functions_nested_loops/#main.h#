@@ -16,6 +16,6 @@ int _isupper(int);
  *@c: the character to print
  */
 int _putchar(char a);
-int _isdigit(int c);
+int 1-isdigit(int
 
 #endif
