@@ -4,7 +4,8 @@
 /**
  *_isupper-function to check uppercase
  *Return:1 if upper case,0 if not upper case
- */void _isupper(char);
+ */
+int _isupper(int);
 /**
  *_putchar writes the character a to stdout
  *@c: the character to print
