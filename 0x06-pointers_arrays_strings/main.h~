@@ -1,0 +1,7 @@
+#ifenef _MAIN_H_
+#define _MAIN_H__
+
+
+char *_strncat(char *dest, char *src, int n);
+
+#endif
