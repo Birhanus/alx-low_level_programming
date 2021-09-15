@@ -11,3 +11,4 @@ int is_palindrome(char *s);
 int helper_prime(int n, int i, int limit);
 int helper_palindrome(char *s, int len);
 int wildcmp(char *s1, char *s2);
+char *wildcard(char *s3, char *s4);
