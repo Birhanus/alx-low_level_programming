@@ -1,16 +1,17 @@
 #include "main.h"
 /**
-*_puts_recursion - print character
-* @s: string
-*/
+ *_strlen_recursion- print length 
+ * @s: string
+ */
 
-void _puts_recursion(char *s)
+int _strlen_recursion(char *s)
 {
 	if (*s != '\0')
 	{
-		int n = 1;
+		int n;
+		
+		_strlen_recursion(s + 1);
 		n++;
-		_puts_recursion(s + 1);
 		return (n);
 	}
 }
