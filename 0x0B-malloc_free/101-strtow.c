@@ -1,63 +1,75 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
-
+#include <stdlib.h>
 /**
- * _strlen - returns the length of a string
- * @s: string
- * Return: length
- */
-
-int _strlen(char *s)
+ * wordCounterRec - count num of words recursively
+ * @str: pointer to char
+ * @i: current index
+ * Return: number of words
+ **/
+int wordCounterRec(char *str, int i)
 {
-	int len = 0;
-
-	while (*s != '\0')
-		len++, s++;
-
-	return (len);
+	if (str[i] == '\0')
+		return (0);
+	if (str[i] == ' ' && str[i + 1] != ' ' && str[i + 1] != '\0')
+		return (1 + wordCounterRec(str, i + 1));
+	return (wordCounterRec(str, i + 1));
 }
-
 /**
- * argstostr - concatenates all the arguments of your program
- * @ac: argc
- * @av: arguments
- * Return: pointer to array
- */
-
-char *argstostr(int ac, char **av)
+ * word_counter - counts number of words in 1d array of strings
+ * @str: pointer to char
+ * Return: number of words
+ **/
+int word_counter(char *str)
 {
-	char *s;
-	int len = 0, i, j, k = 0;
+	if (str[0] != ' ')
+		return (1 + wordCounterRec(str, 0));
+	return (wordCounterRec(str, 0));
+}
+/**
+ * strtow - splits a string into words.
+ * @str: string to be splitted
+ * Return: pointer to an array of strings (words) or null
+ **/
+char **strtow(char *str)
+{
+	char **strDup;
+	int i, n, m, words;
 
-	if (ac == 0 || av == NULL) /* validate input */
+	if (str == NULL || str[0] == 0)
 		return (NULL);
-
-	/* find length to malloc */
-	for (i = 0; i < ac; i++)
-	{
-		len += _strlen(av[i]);
-	}
-	len += (ac + 1); /* add space for newlines and null terminator */
-
-	/* allocate memory and free if error */
-	s = malloc(len * sizeof(char));
-
-	if (s == NULL)
-	{
-		free(s);
+	words = word_counter(str);
+	if (words < 1)
 		return (NULL);
-	}
-
-	/* insert each arg into *str */
-	for (i = 0; i < ac; i++)
+	strDup = malloc(sizeof(char *) * (words + 1));
+	if (strDup == NULL)
+		return (NULL);
+	i = 0;
+	while (i < words && *str != '\0')
 	{
-		for (j = 0; j < _strlen(av[i]); j++)
+		if (*str != ' ')
 		{
-			s[k++] = av[i][j];
+			n = 0;
+			while (str[n] != ' ')
+				n++;
+			strDup[i] = malloc(sizeof(char) * (n + 1));
+			if (strDup[i] == NULL)
+			{
+				while (--i >= 0)
+					free(strDup[--i]);
+				free(strDup);
+				return (NULL);
+			}
+			m = 0;
+			while (m < n)
+			{
+				strDup[i][m] = *str;
+				m++, str++;
+			}
+			strDup[i][m] = '\0';
+			i++;
 		}
-		s[k++] = '\n';
+		str++;
 	}
-
-	return (s);
+	strDup[i] = '\0';
+	return (strDup);
 }
