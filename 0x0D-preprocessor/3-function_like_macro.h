@@ -1,10 +1,4 @@
-#ifndef _3-function_like_macro_h_
-#define _3-function_like_macro_h_
-#define ABS(x){
-        if (x >= 0)
-		return (x);
-	else if (x < 0)
-		return(-x);
-        }
-
+#ifndef _ABS_
+#define _ABS_
+#define ABS(x) (((x) < (0)) ? ((-1) * (x)) : (x))
 #endif
