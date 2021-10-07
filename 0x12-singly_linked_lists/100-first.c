@@ -3,7 +3,8 @@
 void startup(void) __attribute__ ((constructor));
 
 /**
- * msg - execute before main
+ * startup - execute before main
+ * Return:Nothing
  */
 void startup(void)
 {
