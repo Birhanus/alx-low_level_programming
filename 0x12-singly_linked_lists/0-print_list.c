@@ -1,23 +1,22 @@
-#include <stdio.h>
 #include "lists.h"
-#include <stdlib.h>
+
 /**
- * print_listint - prints all elements of a list
- * @h: list
- * Return: number of nodes
- */
+* print_list - print the list
+* @h: list top count
+* Return: count of nodes
+*/
 
-size_t print_listint(const listint_t *h)
+size_t print_list(const list_t *h)
 {
-	size_t num_nodes = 0;
+	int count, d;
+	char *str;
 
-	while (h != NULL)
+	for (count = 0; h; count++)
 	{
-		printf("%d\n", h->n); /* autofills 0 if no int value given */
-
-		num_nodes += 1;
+		(h->str) ? (d = h->len, str = h->str) : (d = 0, str = "(nil)");
+		printf("[%d] %s\n", d, str);
 		h = h->next;
 	}
 
-	return (num_nodes);
+	return (count);
 }
