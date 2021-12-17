@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-
 /**
  * hash_table_get - given key, get value
  * @ht: hash table
